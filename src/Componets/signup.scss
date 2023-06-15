@@ -1,0 +1,44 @@
+.SignUp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        gap: 20px;
+        h2{font-size: 35px; color: lightgreen; margin-bottom: 16px;}
+        input{
+            padding: 9px 10px;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid lightblue;
+            background-color: transparent;
+        }
+        .in{
+            width: 100%;
+            border-bottom: 2px solid lightblue;
+            input{
+                padding: 9px 10px;
+                outline: none;
+                border: none;
+                background-color: transparent;
+                width: 90%;
+            }
+        }
+        button{
+            width: fit-content;
+            // margin: 0 auto;
+            padding: 8px 20px;
+            background-color:lightgreen;
+        }
+        p{
+            font-size: 18px;
+            a{
+                color: lime;
+                text-decoration: none;
+            }
+        }
+    }
+}

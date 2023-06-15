@@ -1,0 +1,88 @@
+.gridContainer{
+    max-width: 95vw;
+    width: 95vw;
+    margin: 20px auto;
+    background-color: #F2F7EB;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    box-shadow: 5px 5px 4px rgba(0,0,0,0.1);
+
+    .leftSideData{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 80px;
+        gap: 20px;
+
+        h4{
+            color: #00abf0;
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin-left: 9px;
+        }
+        p{
+            width: 80%;
+            color: gray;
+        }
+        h1{
+            font-size: 50px;
+        
+            &::first-line{
+                color: greenyellow;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+            }
+        }
+
+        button{
+            padding: 8px 17px;
+            font-size: 16px;
+            outline: none;
+            border: none;
+            background-color:darkgoldenrod;
+            font-weight: 600;
+            border-radius: 4px;
+        }
+        
+    }
+    .rightSizeData{
+        img{
+            width: 800px;
+        }
+    }
+}
+
+
+.flex-container{
+    width: 100vw;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+
+    .payment{
+        padding: 17px 19px;
+        background-color: #f4eeee;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+        position: relative;
+        bottom: 60px;
+        border-radius: 10px;
+
+        i{
+            font-size: 30px;
+            color: green;
+        }
+
+        h6{
+            font-size: 18px;
+            color: black;
+            letter-spacing: 1px;
+            margin-bottom: 2px;
+        }
+    }
+}

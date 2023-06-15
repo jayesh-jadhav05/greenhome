@@ -1,0 +1,21 @@
+.feactureContainer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+
+    h2 {
+        color: black;
+        font-style: italic;
+        font-size: 37px;
+        margin: 20px 0;
+    }
+
+    .Carasuls {
+        display: flex;
+        gap: 30px;
+    }
+}

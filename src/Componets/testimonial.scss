@@ -1,0 +1,50 @@
+.container{
+    width: 100%;
+    margin: 80px 0;
+    .sliderContainer{
+        width: 65%;
+        margin: 0 auto;
+        padding: 30px 0;
+        .userCard{
+            box-shadow: 5px 5px 6px rgba(0,0,0,0.2);
+            overflow: hidden;
+            margin-left: 12px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            padding: 17px 10px;
+            background-color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+            gap: 13px;
+            h6{
+                span{
+                    i{
+                        color: lime;
+                        font-size: 13px;
+                    }
+                    #Norate2,#Norate{
+                        color: none;
+                    }
+        
+                }
+            }
+
+            img{
+                width: 60px;
+                border-radius: 100px;
+                border: 1px solid black;
+            }
+    }
+}
+    .testi{
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+        font-size: 26px;
+        font-style: italic;
+        }
+
+}

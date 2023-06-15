@@ -1,0 +1,22 @@
+.discount{
+   width: 100vw;
+   padding: 20px 200px;
+   background-color: black;
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 30px 0;
+   font-family:serif;
+   button{
+    padding: 8px 15px;
+    outline: none;
+    border: none;
+    background-color: rgb(26, 98, 26);
+    font-weight: 600px;
+    color: #fff;
+    span{
+        margin-right: 7px;
+    }
+   }
+} 
