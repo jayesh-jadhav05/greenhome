@@ -44,7 +44,7 @@ const Signup = () => {
       localStorage.setItem("WelComeUsers", JSON.stringify(users));
 
       alert("Signup Successfully 👍")
-      window.location.href = "http://localhost:3000/login"; // Redirect to login page
+      window.location.href = "/login"; // Redirect to login page
     };
 
   };

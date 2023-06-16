@@ -32,7 +32,7 @@ const Login = () => {
       // Store the logged in user in local storage
       localStorage.setItem("CurrentUser", JSON.stringify(user));
       alert("Logged Successfuly");
-      window.location.href = "http://localhost:3000/"; // Redirect to dashboard page
+      window.location.href = "/"; // Redirect to dashboard page
       // document.getElementById('shopNowIn').href = "./shop.html";
     } else {
       alert("Invalid email or password.")
