@@ -53,7 +53,7 @@ const Header = () => {
                 </div>
                 <div className="right">
                     <div className="first">
-                        <li><NavLink to="/" className="NavItem">Home</NavLink></li>
+                        <li><NavLink to="greenhome" className="NavItem">Home</NavLink></li>
                         <li><NavLink to="/about" className="NavItem">About</NavLink></li>
                         <li><NavLink to="/Products" className="NavItem">Products</NavLink></li>
                         <li><NavLink to="/contact" className="NavItem">Contact</NavLink></li>
