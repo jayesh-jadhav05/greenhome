@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/greenhome/static/css/main.3eb85093.css",
+    "main.js": "/greenhome/static/js/main.6df8f8de.js",
+    "static/media/guava.jpg": "/greenhome/static/media/guava.be010a6d424157e2acb2.jpg",
+    "static/media/bary.jpg": "/greenhome/static/media/bary.8ce979e697019a180115.jpg",
+    "static/media/dragon.jpg": "/greenhome/static/media/dragon.83fc559184c0d94168b2.jpg",
+    "static/media/ginger.jpg": "/greenhome/static/media/ginger.2faec5fbc295e7119c34.jpg",
+    "static/media/aboutusimg1.png": "/greenhome/static/media/aboutusimg1.4119d9b0e66ac8bcf016.png",
+    "static/media/pngegg.png": "/greenhome/static/media/pngegg.71cb1403ee3027b448d4.png",
+    "static/media/pro2.png": "/greenhome/static/media/pro2.23476e8516975b5a224f.png",
+    "static/media/pro1.png": "/greenhome/static/media/pro1.a69746c677e2de4caaad.png",
+    "static/media/pro3.png": "/greenhome/static/media/pro3.2be10d56a418e60e7c6c.png",
+    "static/media/user4.jpg": "/greenhome/static/media/user4.4e1103b43457e0472adc.jpg",
+    "static/media/user2.jpeg": "/greenhome/static/media/user2.ed3f4cb9d4b48918d668.jpeg",
+    "static/media/user1.jpeg": "/greenhome/static/media/user1.1f8b2cd0f8b1d8bec661.jpeg",
+    "static/media/user7.jpeg": "/greenhome/static/media/user7.1f2478cfd6b003589857.jpeg",
+    "static/media/user6.jpg": "/greenhome/static/media/user6.66068e2a917eec6ec36e.jpg",
+    "static/media/slick.svg": "/greenhome/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/greenhome/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/greenhome/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/greenhome/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/greenhome/index.html",
+    "main.3eb85093.css.map": "/greenhome/static/css/main.3eb85093.css.map",
+    "main.6df8f8de.js.map": "/greenhome/static/js/main.6df8f8de.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3eb85093.css",
+    "static/js/main.6df8f8de.js"
+  ]
+}
