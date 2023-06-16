@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './signup.scss';
 import { NavLink } from 'react-router-dom';
+import {ToastContainer,toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
 
@@ -31,11 +33,13 @@ const Login = () => {
     if (user) {
       // Store the logged in user in local storage
       localStorage.setItem("CurrentUser", JSON.stringify(user));
-      alert("Logged Successfuly");
-      window.location.href = "/"; // Redirect to dashboard page
-      // document.getElementById('shopNowIn').href = "./shop.html";
+      // Use Toast for user login seccessfuly
+      toast.success('Login Successfully 👍', { position: "top-center",autoClose: 1000,hideProgressBar: false,closeOnClick: true,pauseOnHover: true,draggable: true,progress: undefined,theme: "dark",});
+      setTimeout(() => {window.location.href = "/";},2000) // Redirect to dashboard page
     } else {
-      alert("Invalid email or password.")
+      // use toast for invalid password or email.
+      toast.error('Invalid email or password 👎', { position: "top-center",autoClose: 4000,hideProgressBar: false,closeOnClick: true,pauseOnHover: true,draggable: true,progress: undefined,theme: "light",});
+     setCurrUser({email : "",password : ""})
     }
   };
 
@@ -60,6 +64,7 @@ const Login = () => {
           <p>Don't have any account? <NavLink to="/signup">Signup</NavLink></p>
         </div>
       </section>
+      <ToastContainer />
     </React.Fragment>
   );
 };

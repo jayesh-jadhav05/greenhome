@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import './signup.scss';
 import { NavLink } from 'react-router-dom';
-
+import {ToastContainer,toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Signup = () => {
 
@@ -33,9 +34,11 @@ const Signup = () => {
     });
 
     if (userExists) {
-      alert(`This UserName already Taken...`)
+      toast.error('This User Name already Taken 👎', { position: "top-center",autoClose: 5000,hideProgressBar: false,closeOnClick: true,pauseOnHover: true,draggable: true,progress: undefined,theme: "light",});
     } else if (user.password !== user.comfirmPassword) {
-      alert("Your Comfirm Password is Wrong");
+     
+      // use Toast for passsword error..
+      toast.error('Your Comfirm Password is Wrong', { position: "top-center",autoClose: 5000,hideProgressBar: false,closeOnClick: true,pauseOnHover: true,draggable: true,progress: undefined,theme: "light",});
     } else {
       // Add the new user to the users array
       users.push(user);
@@ -43,8 +46,10 @@ const Signup = () => {
       // Update the user data in local storage
       localStorage.setItem("WelComeUsers", JSON.stringify(users));
 
-      alert("Signup Successfully 👍")
-      window.location.href = "/login"; // Redirect to login page
+      // Toast for user signup successfully..
+      toast.success('Signup Successfully 👍', {position: "top-center",autoClose: 1000,hideProgressBar: false,closeOnClick: true,pauseOnHover: true,draggable: true,progress: undefined,theme: "dark",});
+    
+      setTimeout(()=>{window.location.href = "/login"},2000);
     };
 
   };
@@ -63,6 +68,7 @@ const Signup = () => {
           <p> You have already user? <NavLink to="/login">Login</NavLink></p>
         </div>
       </section>
+      <ToastContainer />
     </React.Fragment>
   )
 }

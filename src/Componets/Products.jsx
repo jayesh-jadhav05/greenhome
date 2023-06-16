@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import {ToastContainer,toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Data from '../Componets/ProductsAPI';
 import MainShopCart from "./MainShopCart";
 import FilterSideBar from "./FilterSideBar";
@@ -51,9 +53,11 @@ const Products = () => {
       aftersignup.Mycart = signupUserMyCart;
       localStorage.setItem("CurrentUser", JSON.stringify(data));
       localStorage.setItem("WelComeUsers",JSON.stringify(SignupUserDatas));
-      alert("Product is Added 👍");
+      // Add toast For product Added..
+      toast.success('Product Added Successfully 👍', {position: "top-center",autoClose: 3000,hideProgressBar: false,closeOnClick: true,pauseOnHover: true,draggable: true,progress: undefined,theme: "dark",});
     } else {
-      alert("Product is already Added 🙂");
+      // Add toast For product Already Added..
+      toast.warn('Product is already Added', {position: "top-center",autoClose: 2000,hideProgressBar: false,closeOnClick: true,pauseOnHover: true,draggable: true,progress: undefined,theme: "colored",});
     } 
   };
 
@@ -81,6 +85,7 @@ const Products = () => {
       </div>
       </section>
       </main>
+      <ToastContainer />
     </React.Fragment>
   );
 };

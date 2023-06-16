@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import '../Componets/shopping.scss';
 import { NavLink } from 'react-router-dom';
+import {ToastContainer,toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 // Single Cart Component
 const SingleProduct = ({ item,removeProduct}) => {
@@ -44,6 +46,7 @@ const ShoppingCart = () => {
         setData(Logdata.Mycart);
         localStorage.setItem("CurrentUser",JSON.stringify(Logdata));
         localStorage.setItem("WelComeUsers",JSON.stringify(SignUpUsersData));
+        toast('Product Remove Successfully 👍',{position : 'top-center',autoClose: 2000})
     };
 
      
@@ -51,6 +54,7 @@ const ShoppingCart = () => {
     let TotalPrice = data.reduce((a,v) =>  a = a + v.price , 0 ); 
 
     return (
+        <>
         <div className='cartContainer'>
             <div className='shopNow'>
 
@@ -96,6 +100,8 @@ const ShoppingCart = () => {
 
             </div>
         </div>
+        <ToastContainer />
+        </>
     );
 };
 
