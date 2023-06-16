@@ -39,7 +39,7 @@ const Login = () => {
     } else {
       // use toast for invalid password or email.
       toast.error('Invalid email or password 👎', { position: "top-center",autoClose: 4000,hideProgressBar: false,closeOnClick: true,pauseOnHover: true,draggable: true,progress: undefined,theme: "light",});
-     setCurrUser({email : "",password : ""})
+      setCurrUser({email : "",password : ""})
     }
   };
 
