@@ -1,0 +1,22 @@
+.Container-Head{
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    border-top: 1px solid lightgray;
+    padding: 50px 0;
+
+    h1{text-align: center; letter-spacing: 1px;}
+    .grid-layout{
+        width: 75%;
+        display: flex;
+        gap: 50px;
+        margin: 50px auto;
+        padding: 30px 50px;
+        .same{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}

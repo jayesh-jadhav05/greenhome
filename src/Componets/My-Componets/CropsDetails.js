@@ -20,7 +20,7 @@ const CropsDetails = () => {
       <div className="main-container">
           <h2>Find Your Crops Details 💯</h2>
         <div className="search-bar">
-          <input type="text" placeholder="search" value={searchCrop} onChange={(e)=> setCropSearch(e.target.value)}/>
+          <input type="text" placeholder="Ex - Cotton" value={searchCrop} onChange={(e)=> setCropSearch(e.target.value)}/>
           <button onClick={() => searchCropDetails()}>Search</button>
         </div>
         <div className="grid-box">
