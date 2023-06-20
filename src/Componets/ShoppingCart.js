@@ -54,7 +54,7 @@ const ShoppingCart = () => {
     let TotalPrice = data.reduce((a,v) =>  a = a + v.price , 0 ); 
 
     return (
-        <>
+        <React.Fragment>
         <div className='cartContainer'>
             <div className='shopNow'>
 
@@ -65,8 +65,7 @@ const ShoppingCart = () => {
                     <div className='products'>
                         {
                             data.map((item) => {
-                                 return <SingleProduct id={item.id} item={item} removeProduct={removeProduct}/>
-                            
+                                 return <SingleProduct id={item.id} item={item} removeProduct={removeProduct}/> 
                             })
                         }
                     </div>
@@ -91,17 +90,15 @@ const ShoppingCart = () => {
                             <button>CONTINUE TO CHECK OUT</button>
                         </div>
                     </div>
-
                     <div className='atmImg'>
                         <img src='All_Images/Atm.png' alt='cartATm' />
                     </div>
-
                 </div>
 
             </div>
         </div>
         <ToastContainer />
-        </>
+        </React.Fragment>
     );
 };
 

@@ -43,8 +43,8 @@ const Footer = () => {
                 <div>
                     <h5>About Me</h5>
                     <div className='aboutData'>
-                        <p>hii,i am providing organic products with good Quality.
-                            you can Explore more in this website..
+                        <p>
+                        In organic farming, farmers rely on techniques such as crop rotation, composting, and biological pest control to maintain soil fertility, control pests and diseases, and promote overall plant health. Synthetic fertilizers and pesticides are replaced with organic alternatives, such as animal manure, cover crops, and beneficial insects.
                         </p>
                     </div>
                 </div>
