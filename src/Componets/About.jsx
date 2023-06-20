@@ -1,7 +1,7 @@
 import React from "react";
 import GridBox from '../Componets/GridBox';
 import aboutImg from '../Images/aboutusimg1.png';
-import '../Componets/about.scss';
+import '../Styles/about.scss';
 import OrganicDetails from "./My-Componets/OrganicDetails";
 const About = () => {
 

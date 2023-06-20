@@ -4,7 +4,7 @@ import Guava from '../Images/guava.jpg';
 import Bary from '../Images/bary.jpg';
 import ginger from '../Images/ginger.jpg';
 import Card from '../Componets/Card';
-
+import '../Styles/feactures.scss'
 const Feactures = () => {
 
     return (

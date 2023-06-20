@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Componets/Discount.scss';
+import '../Styles/Discount.scss';
 const Discount = () => {
   return (
     <div className='discount'>

@@ -1,6 +1,6 @@
 import React from "react";
 import OrganicCard from "./OrganicCard";
-import '../Componets/OrganicCard.scss';
+import '../Styles/OrganicCard.scss';
 import Product1Image from '../Images/pro1.png';
 import Product2Image from '../Images/pro2.png';
 import Product3Image from '../Images/pro3.png';

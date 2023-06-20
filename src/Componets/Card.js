@@ -1,5 +1,5 @@
 import React from "react";
-import '../Componets/card.scss';
+import '../Styles/card.scss';
 import { NavLink } from "react-router-dom";
 const Card = (props) => {
 
@@ -15,7 +15,7 @@ const Card = (props) => {
                 </div>
                 <span>{props.price}&nbsp;<i className="fa-sharp fa-solid fa-indian-rupee-sign"></i></span>
             </div>
-            <NavLink to="/products" className="btn"><span><i class="fa-solid fa-bag-shopping"></i></span>Add to Cart</NavLink>
+            <NavLink to="/products" className="btn-style btn">Add to Cart</NavLink>
         </div>
     )
 }

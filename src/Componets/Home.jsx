@@ -1,7 +1,7 @@
 import React from "react";
 import GridBox from "./GridBox";
 import homeImg from '../pngegg.png';
-import './home.scss';
+import '../Styles/home.scss';
 import PayBox from "./PayBox";
 import Feactures from "./Features";
 import ProductCard from "../Componets/ProductCard";

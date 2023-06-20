@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Componets/footer.scss';
+import '../Styles/footer.scss';
 
 
 const FooterInfoBox = (props) => {

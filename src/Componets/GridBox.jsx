@@ -9,7 +9,7 @@ const GridBox = (Props) => {
                     <h4>{Props.firstTitle}</h4>
                     <h1>{Props.mainTitle}</h1>
                     <p>{Props.discription}</p>
-                    <button>Join Us</button>
+                    <button className="btn-style">Join Us</button>
                 </div>
                 <div className="rightSizeData">
                 <img src={Props.imgSrc} alt="images" />

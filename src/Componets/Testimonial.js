@@ -6,7 +6,7 @@ import user4 from '../Images/user4.jpg';
 import user5 from '../Images/user6.jpg';
 import user6 from '../Images/user7.jpeg';
 import user7 from '../Images/user8.jpeg';
-import '../Componets/testimonial.scss';
+import '../Styles/testimonial.scss';
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';

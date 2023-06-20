@@ -12,4 +12,19 @@ body{
 
 button{
     cursor: pointer;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.btn-style{
+    background-color: royalblue;
+    color: black;
+    text-align: center;
+    padding: 8px 17px;
+    font-size: 16px;
 }

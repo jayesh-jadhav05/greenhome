@@ -5,10 +5,9 @@ import Home from './Componets/Home';
 import About from './Componets/About';
 import Products from './Componets/Products';
 import Contact from './Componets/Contact';
-import '../src/App.scss';
 import ShoppingCart from "./Componets/ShoppingCart";
 import Footer from "./Componets/Footer";
-import './Componets/product.scss';
+import './Styles/product.scss';
 import Signup from './Componets/Signup';
 import Login from './Componets/Login';
 const App = () => {
