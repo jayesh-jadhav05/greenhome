@@ -13,6 +13,7 @@ const Signup = () => {
     email: "",
     password: "",
     comfirmPassword: "",
+    price : '',
     Mycart: []
   });
 

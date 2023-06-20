@@ -58,7 +58,7 @@ const Login = () => {
       <section className="SignUp">
         <div className="container">
           <h2>Login 💻</h2>
-          <input type="email" placeholder="Email" name='email' required id="emailid" value={currUser.email} onChange={handleLogin}/>
+          <input type="email" placeholder="Email" name='email' required id="emailid" value={currUser.email} onChange={handleLogin} autoComplete='off'/>
           <p className='in'><input type={seePassword} placeholder="Password" name='password' required id="password" value={currUser.password} onChange={handleLogin}/> <i class="fa-regular fa-eye" onClick={() => SeaPassword()}></i></p>
           <button className="btn" onClick={loginNow} id="sign">Login</button>
           <p>Don't have any account? <NavLink to="/signup">Signup</NavLink></p>

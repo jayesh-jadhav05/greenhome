@@ -8,7 +8,8 @@ const Data = {
         price:140,
         catagory : "fruit",
         rating : 4,
-        others : "popular"
+        others : "popular",
+        numOfProducts : 1
       }
       ,
       {
@@ -18,7 +19,8 @@ const Data = {
         price:70,
         catagory : "fruit",
         rating : 3,
-        others : "popular"
+        others : "popular",
+        numOfProducts : 1
       }
       , {
         id:3,
@@ -27,7 +29,8 @@ const Data = {
         price:120,
         catagory : "fruit",
         rating : 5,
-        others : "popular"
+        others : "popular",
+        numOfProducts : 1
       }
       , 
       {
@@ -37,7 +40,8 @@ const Data = {
         price:80,
         catagory : "fruit",
         rating : 2,
-        others : "famous"
+        others : "famous",
+        numOfProducts : 1
       }
       ,
       {
@@ -47,7 +51,8 @@ const Data = {
         price:90,
         catagory : "fruit",
         rating : 1,
-        others : "famous"
+        others : "famous",
+        numOfProducts : 1
       }
       ,
       {
@@ -57,7 +62,8 @@ const Data = {
         price:76,
         catagory : "fruit",
         rating : 1,
-        others : "popular"
+        others : "popular",
+        numOfProducts : 1
       },
       {
         id:7,
@@ -66,7 +72,8 @@ const Data = {
         price:110,
         catagory : "fruit",
         rating : 5,
-        others : "famous"
+        others : "famous",
+        numOfProducts : 1
       }
       ,
       {
@@ -76,7 +83,8 @@ const Data = {
         price:65,
         catagory : "fruit",
         rating : 4,
-        others : "famous"
+        others : "famous",
+        numOfProducts : 1
       }
       ,
       {
@@ -86,7 +94,8 @@ const Data = {
         price:180,
         catagory : "fruit",
         rating : 3,
-        others : "popular"
+        others : "popular",
+        numOfProducts : 1
       }
       ,
       {
@@ -96,7 +105,8 @@ const Data = {
         price:190,
         catagory : "fruit",
         rating : 1,
-        others : "famous"
+        others : "famous",
+        numOfProducts : 1
       },
       {
         id:11,
@@ -105,7 +115,8 @@ const Data = {
         price:70,
         catagory : "fruit",
         rating : 2,
-        others : "famous"
+        others : "famous",
+        numOfProducts : 1
       },
       {
         id:12,
@@ -114,7 +125,8 @@ const Data = {
         price:123,
         catagory : "fruit",
         rating : 3,
-        others : "popular"
+        others : "popular",
+        numOfProducts : 1
       },
       {
         id:13,
@@ -123,7 +135,8 @@ const Data = {
         price:155,
         catagory : "fruit",
         rating : 4,
-        others : "popular"
+        others : "popular",
+        numOfProducts : 1
       },
       {
         id:14,
@@ -132,7 +145,8 @@ const Data = {
         price:99,
         catagory : "fruit",
         rating : 5,
-        others : "trending"
+        others : "trending",
+        numOfProducts : 1
       },
       {
         id:15,
@@ -141,7 +155,8 @@ const Data = {
         price:45,
         catagory : "fruit",
         rating : 5,
-        others : "trending"
+        others : "trending",
+        numOfProducts : 1
       },
       {
         id:16,
@@ -150,7 +165,8 @@ const Data = {
         price:103,
         catagory : "fruit",
         rating : 4,
-        others : "popular"
+        others : "popular",
+        numOfProducts : 1
       },
       {
         id:17,
@@ -159,7 +175,8 @@ const Data = {
         price:45,
         catagory : "fruit",
         rating : 3,
-        others : "trending"
+        others : "trending",
+        numOfProducts : 1
       },
       {
         id:18,
@@ -168,7 +185,8 @@ const Data = {
         price:49,
         catagory : "fruit",
         rating : 2,
-        others : "trending"
+        others : "trending",
+        numOfProducts : 1
       },
       {
         id:19,
@@ -177,7 +195,8 @@ const Data = {
         price:87,
         catagory : "vegitable",
         rating : 1,
-        others : "trending"
+        others : "trending",
+        numOfProducts : 1
       },
       {
         id:20,
@@ -186,7 +205,8 @@ const Data = {
         price:90,
         catagory : "vegitable",
         rating : 2,
-        others : "trending"
+        others : "trending",
+        numOfProducts : 1
       },
       {
         id:21,
@@ -195,7 +215,8 @@ const Data = {
         price:24,
         catagory : "vegitable",
         rating : 5,
-        others : "famous"
+        others : "famous",
+        numOfProducts : 1
       },
       {
         id:22,
@@ -204,7 +225,8 @@ const Data = {
         price:35,
         catagory : "vegitable",
         rating : 4,
-        others : "trending"
+        others : "trending",
+        numOfProducts : 1
       },
       {
         id:23,
@@ -213,7 +235,8 @@ const Data = {
         price:39,
         catagory : "vegitable",
         rating : 3,
-        others : "popular"
+        others : "popular",
+        numOfProducts : 1
       },
       {
         id:24,
@@ -222,7 +245,8 @@ const Data = {
         price:77,
         catagory : "vegitable",
         rating : 4,
-        others : "famous"
+        others : "famous",
+        numOfProducts : 1
       },
       {
         id:25,
@@ -231,7 +255,8 @@ const Data = {
         price:91,
         catagory : "legume",
         rating : 5,
-        others : "famous"
+        others : "famous",
+        numOfProducts : 1
       },
       {
         id:26,
@@ -240,7 +265,8 @@ const Data = {
         price:78,
         catagory : "legume",
         rating : 3,
-        others : "trending"
+        others : "trending",
+        numOfProducts : 1
       },
       {
         id:27,
@@ -249,7 +275,8 @@ const Data = {
         price:55,
         catagory : "legume",
         rating : 2,
-        others : "popular"
+        others : "popular",
+        numOfProducts : 1
       },
       {
         id:28,
@@ -258,7 +285,8 @@ const Data = {
         price:74,
         catagory : "legume",
         rating : 4,
-        others : "trending"
+        others : "trending",
+        numOfProducts : 1
       },
       {
         id:29,
@@ -267,7 +295,8 @@ const Data = {
         price:99,
         catagory : "legume",
         rating : 5,
-        others : "famous"
+        others : "famous",
+        numOfProducts : 1
       },
       {
         id:30,
@@ -276,7 +305,8 @@ const Data = {
         price:88,
         catagory : "legume",
         rating : 4,
-        others : "popular"
+        others : "popular",
+        numOfProducts : 1
       },
       {
         id:31,
@@ -285,7 +315,8 @@ const Data = {
         price:79,
         catagory : "legume",
         rating : 1,
-        others : "trending"
+        others : "trending",
+        numOfProducts : 1
       },
       {
         id:32,
@@ -294,7 +325,8 @@ const Data = {
         price :119,
         catagory : "legume",
         rating : 5,
-        others : "famous"
+        others : "famous",
+        numOfProducts : 1
       },
       {
         id:33,
@@ -303,7 +335,8 @@ const Data = {
         price:96,
         catagory : "legume",
         rating : 3,
-        others : "popular"
+        others : "popular",
+        numOfProducts : 1
       }
 ]
 }

@@ -40,7 +40,6 @@ const Products = () => {
     const aftersignup = SignupUserDatas.filter((item) => item.email === data.email);
     let myCartArray = data.Mycart;
     let signupUserMyCart = aftersignup[0].Mycart;
-
     var user = myCartArray.find(function (user) {
       return user.id === item.id;
     });
@@ -50,6 +49,7 @@ const Products = () => {
       myCartArray.push(item);
       signupUserMyCart.push(item);
       data.Mycart = myCartArray;
+      
       aftersignup.Mycart = signupUserMyCart;
       localStorage.setItem("CurrentUser", JSON.stringify(data));
       localStorage.setItem("WelComeUsers",JSON.stringify(SignupUserDatas));

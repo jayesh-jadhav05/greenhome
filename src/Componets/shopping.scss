@@ -114,21 +114,28 @@
                     justify-content: center;
                     align-items: center;
                     gap: 10px;
-                    button{
-                        padding: 4px;
-                        background-color: transparent;
+                    .change-price{
                         border: none;
                         outline: none;
                         font-weight: 500;
                         font-size: 20px;
-                        color: lightgrey;
+                        color: black;
+                        padding: 1px 5px;
+                        box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+                        &:hover{
+                            scale: 1.1;
+                        }
                     }
+                    .TotalProduct{ font-size: 25px;  }
                 }
               .remove{
                 background-color: transparent;
                 border: none;
                 outline: none;
                 font-size: 20px;
+                &:hover{
+                    scale: 1.1;
+                }
               }
             }
         }   

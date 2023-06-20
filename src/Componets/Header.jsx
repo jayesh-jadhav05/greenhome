@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import '../Componets/header.scss';
+import {ToastContainer,toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Header = () => {
 
     const [styles,setStyle] = useState({});
@@ -9,7 +11,10 @@ const Header = () => {
    
 
     const UserLogout = () => {
-        window.location.href = "/login";
+        toast.success('Logout Successfully 👍', {position: "top-center",autoClose: 1000,hideProgressBar: false,closeOnClick: true,pauseOnHover: true,draggable: true,progress: undefined,theme: "dark",});
+        localStorage.removeItem("CurrentUser");
+        setTimeout(() =>{window.location.href = "/login";},2000 )
+        
     };
 
     useEffect(() => {
@@ -21,6 +26,8 @@ const Header = () => {
             email : data.email
         };
         setUserDetails(newUser);
+    }else{
+        setStyle({maxHeight : "0"})
     }
     },[])
     // this function for toggle a user profile card..
@@ -46,6 +53,7 @@ const Header = () => {
     
 
     return (
+        <>
         <header>
             <nav className="navbar">
                 <div className="left">
@@ -85,6 +93,8 @@ const Header = () => {
                 </div>
             </nav>
         </header>
+        <ToastContainer />
+        </>
     )
 }
 

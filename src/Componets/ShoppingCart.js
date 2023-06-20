@@ -6,7 +6,6 @@ import 'react-toastify/dist/ReactToastify.css';
 
 // Single Cart Component
 const SingleProduct = ({ item,removeProduct}) => {
-
     return (
         <div className='singleProduct'>
             <img src={item.img} alt='apple' />
@@ -15,9 +14,9 @@ const SingleProduct = ({ item,removeProduct}) => {
                 <h4>{item.name}</h4>
             </div>
             <div className='add_remove_btns'>
-                <button>-</button>
+                <button className="change-price">-</button>
                 <span className='TotalProduct'>1</span>
-                <button>+</button>
+                <button className='change-price'>+</button>
             </div>
             <h5>{item.price}Rs</h5>
             <button className='remove' onClick={() => {removeProduct(item.id)}}><i class="fa-solid fa-circle-xmark"></i></button>
@@ -28,7 +27,9 @@ const SingleProduct = ({ item,removeProduct}) => {
 const ShoppingCart = () => {
  
     // Get All Products Data Present In LocalStorage and store it into state...
-    const [data,setData] = useState(JSON.parse(localStorage.getItem("CurrentUser")).Mycart)
+    const [data,setData] = useState(JSON.parse(localStorage.getItem("CurrentUser")).Mycart);
+    // const [price,setPrice] = useState(1);
+   
 
     // Remove product From Cart Page.
     const removeProduct = (Removeid) => {
