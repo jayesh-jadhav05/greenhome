@@ -7,7 +7,7 @@ const About = () => {
 
     return(
         <React.Fragment>
-        <GridBox imgSrc={aboutImg} firstTitle="We Will Find More" mainTitle="Join a Organic Movement" discription="Hii How how are you all i This all are good.i found the organic farming skills were i teach you how you can do organiv farming in a best way..join with me i will be teaching you all ,lets do" />
+        <GridBox imgSrc={aboutImg} firstTitle="We Will Find More" mainTitle="Welcome To Green World" discription="Organic farming is more than just a method of agriculture; it is a philosophy, a way of life that embraces the fundamental principles of sustainability and respect for nature. It is a practice that encourages farmers to work in harmony with the environment, nurturing the soil, preserving biodiversity, and prioritizing the health and well-being of both consumers and the planet. With each seed sown, organic farmers embark on a profound journey, committed to the idea that the Earth's resources should be protected and replenished, rather than depleted." />
          <OrganicDetails />
          </React.Fragment>
         )

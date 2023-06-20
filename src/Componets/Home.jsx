@@ -1,6 +1,6 @@
 import React from "react";
 import GridBox from "./GridBox";
-import homeImg from '../pngegg.png';
+import homeImg from '../Images/homeimg.png';
 import '../Styles/home.scss';
 import PayBox from "./PayBox";
 import Feactures from "./Features";
