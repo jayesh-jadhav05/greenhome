@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import '../Styles/contact.scss';
-
-
+import {ToastContainer,toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
 
@@ -24,13 +24,13 @@ const Contact = () => {
         const answer = randomNo.firstNo + randomNo.SecondNo;
         if(details.name !== "" && details.email !== "" && details.message !== "" && details.result !== ""){
             if(answer === Number(details.result)){
-                alert(`${details.name} has Successfully Submited his Form 👍`);
+                toast.success(`${details.name} has Successfully Submited Form 👍`, {position: "top-center",autoClose: 1000,hideProgressBar: false,closeOnClick: true,pauseOnHover: true,draggable: true,progress: undefined,theme: "dark",});
                 setDetails({name : "",email : "",message : "",result : ""});
             }else{
-                alert("Your Captch is Incorrect 👎");
+                toast.error('Your Captcha is incorrect 👎', { position: "top-center",autoClose: 5000,hideProgressBar: false,closeOnClick: true,pauseOnHover: true,draggable: true,progress: undefined,theme: "light",});
             }
         }else{
-            alert("Please Fill The Form To Move Forword👎");
+            toast.error('Please Fill The Form To Move Forword👎', { position: "top-center",autoClose: 5000,hideProgressBar: false,closeOnClick: true,pauseOnHover: true,draggable: true,progress: undefined,theme: "light",});
         }
     };
 
@@ -60,6 +60,7 @@ const Contact = () => {
                 </div>
                 <button className="btn" onClick={submitForm}>Submit</button>
             </div>
+            <ToastContainer />
         </React.Fragment>
     )
 };

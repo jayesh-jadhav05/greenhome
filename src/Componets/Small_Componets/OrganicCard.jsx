@@ -4,8 +4,6 @@ import { NavLink } from "react-router-dom";
 
 const OrganicCard = (props) => {
     return (
-
-        
         <div className="Container">
             <div className="product_info">
                 <h3>{props.product_title}</h3>

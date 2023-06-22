@@ -7,7 +7,6 @@ import Products from './Componets/Products';
 import Contact from './Componets/Contact';
 import ShoppingCart from "./Componets/ShoppingCart";
 import Footer from "./Componets/Footer";
-import './Styles/product.scss';
 import Signup from './Componets/Signup';
 import Login from './Componets/Login';
 const App = () => {

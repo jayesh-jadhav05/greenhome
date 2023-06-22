@@ -1,5 +1,5 @@
 import React from "react";
-import '../Styles/card.scss';
+import '../../Styles/card.scss';
 import { NavLink } from "react-router-dom";
 const Card = (props) => {
 

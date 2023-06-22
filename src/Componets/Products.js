@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import {ToastContainer,toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Data from '../Componets/ProductsAPI';
-import MainShopCart from "./MainShopCart";
-import FilterSideBar from "./FilterSideBar";
-
+import Data from './ProductsAPI';
+import MainShopCart from './Small_Componets/MainShopCart'
+import FilterSideBar from "./Small_Componets/FilterSideBar";
+import '../Styles/product.scss';
 const Products = () => {
   const [productData,filterProductS] = useState(Data.products);
- // Filters All Products
-  
+
+ // Filters All Products  
   const filterMe = (btnclicked) => {
    
     const a1 = Data.products.filter((item) => item.price <= btnclicked)
@@ -34,9 +34,9 @@ const Products = () => {
     // get all signup users data from localStorage.
     let SignupUserDatas = JSON.parse(localStorage.getItem("WelComeUsers"));
 
-    // get CurrentUser Data and Convert string data into array Format..
+    // get CurrentUser Data and Convert String data into array Format..
     let data = JSON.parse(localStorage.getItem("CurrentUser")); 
-    // check which user is matching to current logged user to all signup users..
+    // Check Which User is Matching to Current Logged User to all Signup Users..
     const aftersignup = SignupUserDatas.filter((item) => item.email === data.email);
     let myCartArray = data.Mycart;
     let signupUserMyCart = aftersignup[0].Mycart;
@@ -53,10 +53,10 @@ const Products = () => {
       aftersignup.Mycart = signupUserMyCart;
       localStorage.setItem("CurrentUser", JSON.stringify(data));
       localStorage.setItem("WelComeUsers",JSON.stringify(SignupUserDatas));
-      // Add toast For product Added..
+      // Add toast For Product Added..
       toast.success('Product Added Successfully 👍', {position: "top-center",autoClose: 3000,hideProgressBar: false,closeOnClick: true,pauseOnHover: true,draggable: true,progress: undefined,theme: "dark",});
     } else {
-      // Add toast For product Already Added..
+      // Add toast For Product Already Added..
       toast.warn('Product is already Added', {position: "top-center",autoClose: 2000,hideProgressBar: false,closeOnClick: true,pauseOnHover: true,draggable: true,progress: undefined,theme: "colored",});
     } 
   };
@@ -69,8 +69,7 @@ const Products = () => {
       <section className="rightBar">
       <div className="searchBar">
         <div className="find">
-          <input type="text" placeholder="Buy Your Favorite fruites" />
-          <button className="btn">Find</button>
+          <input type="search" placeholder="Search Products" />
         </div>
       </div>
 
