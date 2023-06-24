@@ -3,17 +3,19 @@ import { NavLink } from "react-router-dom";
 import '../Styles/header.scss';
 import {ToastContainer,toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from 'react-router-dom';
+
 const Header = () => {
 
     const [styles,setStyle] = useState({});
     const [check,setCheck] = useState(true);
     const [userDetails,setUserDetails] = useState({ username : "", email : "" });
-   
+    const navigate = useNavigate();
 
     const UserLogout = () => {
         toast.success('Logout Successfully 👍', {position: "top-center",autoClose: 1000,hideProgressBar: false,closeOnClick: true,pauseOnHover: true,draggable: true,progress: undefined,theme: "dark",});
         localStorage.removeItem("CurrentUser");
-        setTimeout(() =>{window.location.href = "/login";},2000 )
+        setTimeout(() =>{navigate('/login')},2000 )
         
     };
 
@@ -29,7 +31,8 @@ const Header = () => {
     }else{
         setStyle({maxHeight : "0"})
     }
-    },[])
+    },[userDetails])
+    
     // this function for toggle a user profile card..
     const toggleMenu = ()  => {
 

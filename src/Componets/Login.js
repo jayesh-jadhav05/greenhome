@@ -3,6 +3,7 @@ import '../Styles/signup.scss';
 import { NavLink } from 'react-router-dom';
 import {ToastContainer,toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
@@ -14,6 +15,7 @@ const Login = () => {
     password : ""
   });
 
+  const navigate = useNavigate();
 
   let name,value;
   const handleLogin = (e) => {
@@ -35,7 +37,7 @@ const Login = () => {
       localStorage.setItem("CurrentUser", JSON.stringify(user));
       // Use Toast for user login seccessfuly
       toast.success('Login Successfully 👍', { position: "top-center",autoClose: 1000,hideProgressBar: false,closeOnClick: true,pauseOnHover: true,draggable: true,progress: undefined,theme: "dark",});
-      setTimeout(() => {window.location.href = "/";},2000) // Redirect to dashboard page
+      setTimeout(() => {navigate('/')},2000) // Redirect to dashboard page
     } else {
       // use toast for invalid password or email.
       toast.error('Invalid email or password 👎', { position: "top-center",autoClose: 4000,hideProgressBar: false,closeOnClick: true,pauseOnHover: true,draggable: true,progress: undefined,theme: "light",});

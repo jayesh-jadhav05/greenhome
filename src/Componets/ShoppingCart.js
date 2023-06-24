@@ -5,8 +5,6 @@ import {ToastContainer,toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import SingleProductCart from './Small_Componets/SingleProductCart';
 
-
-
 const ShoppingCart = () => {
  
     // Get All Products Data Present In LocalStorage and store it into state...
@@ -56,6 +54,8 @@ const ShoppingCart = () => {
        setData(JSON.parse(localStorage.getItem("CurrentUser")).Mycart);
     }
 
+    
+  
     return (
         <React.Fragment>
         <div className='cartContainer'>
@@ -90,7 +90,7 @@ const ShoppingCart = () => {
                             <h3>Total Cost</h3>
                             <h6>{totalPrice}Rs</h6>
                             <h5>Have a Promo Code?</h5>
-                            <button>CONTINUE TO CHECK OUT</button>
+                            <button>Pay Now</button>
                         </div>
                     </div>
                     <div className='atmImg'>

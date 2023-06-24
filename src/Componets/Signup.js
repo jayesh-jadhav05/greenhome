@@ -3,7 +3,7 @@ import '../Styles/signup.scss';
 import { NavLink } from 'react-router-dom';
 import {ToastContainer,toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import { useNavigate } from 'react-router-dom';
 const Signup = () => {
 
   // handle user state inputs
@@ -16,6 +16,8 @@ const Signup = () => {
     price : '',
     Mycart: []
   });
+
+  const navigate = useNavigate();   // UseNavigater to redirect to new page what ever you want to redirect
 
   let name, value;
   const handleInputs = (e) => {
@@ -50,7 +52,7 @@ const Signup = () => {
       // Toast for user signup successfully..
       toast.success('Signup Successfully 👍', {position: "top-center",autoClose: 1000,hideProgressBar: false,closeOnClick: true,pauseOnHover: true,draggable: true,progress: undefined,theme: "dark",});
     
-      setTimeout(()=>{window.location.href = "/login"},2000);
+      setTimeout(()=>{ navigate('/login') },2000);
     };
 
   };
