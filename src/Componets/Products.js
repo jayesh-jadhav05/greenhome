@@ -8,6 +8,7 @@ import '../Styles/product.scss';
 const Products = () => {
   const [productData,filterProductS] = useState(Data.products);
 
+  
  // Filters All Products  
   const filterMe = (btnclicked) => {
    
@@ -61,6 +62,8 @@ const Products = () => {
     } 
   };
 
+
+
   return (
     <React.Fragment>
     <main className="mainShow">
@@ -69,7 +72,7 @@ const Products = () => {
       <section className="rightBar">
       <div className="searchBar">
         <div className="find">
-          <input type="search" placeholder="Search Products" />
+          <input type="search" placeholder="Search Products" onChange={(e) => filterProductS(productData.filter((item) => item.searchname.includes(e.target.value)))}/>
         </div>
       </div>
 

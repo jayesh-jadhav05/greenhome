@@ -10,8 +10,10 @@ const ShoppingCart = () => {
  
     // Get All Products Data Present In LocalStorage and store it into state...
     const [data,setData] = useState(JSON.parse(localStorage.getItem("CurrentUser")).Mycart);
+
     // Calculate Total price   
     let [totalPrice,SetTotalPrice] = useState(data.reduce((a,v) =>  a = a + v.price , 0 ));
+
     // Remove product From Cart Page.
     const removeProduct = (Removeid) => {
  
@@ -33,8 +35,8 @@ const ShoppingCart = () => {
 
     const a  = useContext(MyContext);
     a.setTotalPrice(totalPrice);
-    // setTotalPrice(totalPrice);
-    // [ When User Click on plus,minus button The price will Change or Product Quantity also ]
+
+    //  When User Click on plus,minus button The price will Change or Product Quantity also ]
     const Change_Product_Quantity = (product_id,whatChange) => {
        const collection = JSON.parse(localStorage.getItem("CurrentUser"));
        const product_arr = collection.Mycart;
@@ -58,12 +60,12 @@ const ShoppingCart = () => {
        setData(JSON.parse(localStorage.getItem("CurrentUser")).Mycart);
     }
 
-    // ---------------------------------Stripe gateway integration-------------------------
+// ---------------------------------Stripe Gateway Integration-------------------------
 
   
 
 
-// -----------------------------End Point---------------------------------------
+// --------------------------------------End Point--------------------------------------
     return (
         <React.Fragment>
         <div className='cartContainer'>

@@ -9,50 +9,55 @@ const Data = {
         catagory : "fruit",
         rating : 4,
         others : "popular",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'drogon'
       }
       ,
       {
         id:2,
         img:"productsImages/guava.png",
-        name:"Guava Fruit",
+        name:"Guava",
         price:70,
         catagory : "fruit",
         rating : 3,
         others : "popular",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'guava'
       }
       , {
         id:3,
         img:"productsImages/stobbary.png",
-        name:"Stoberry Fruit",
+        name:"Stoberry",
         price:120,
         catagory : "fruit",
         rating : 5,
         others : "popular",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'stoberry'
       }
       , 
       {
         id:4,
         img:"productsImages/apple2.png",
-        name:"Apple Fruit",
+        name:"Apple",
         price:80,
         catagory : "fruit",
         rating : 2,
         others : "famous",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'apply'
       }
       ,
       {
         id:5,
         img:"productsImages/kiwi.png",
-        name:"Kiwi Fruit",
+        name:"Kiwi",
         price:90,
         catagory : "fruit",
         rating : 1,
         others : "famous",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'kiwi'
       }
       ,
       {
@@ -63,60 +68,66 @@ const Data = {
         catagory : "fruit",
         rating : 1,
         others : "popular",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'watermelon'
       },
       {
         id:7,
         img:"productsImages/mango.png",
-        name:"Mango Fruit",
+        name:"Mango",
         price:110,
         catagory : "fruit",
         rating : 5,
         others : "famous",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'mango'
       }
       ,
       {
         id:8,
         img:"productsImages/grapes.png",
-        name:"Grape Fruit",
+        name:"Grapes",
         price:65,
         catagory : "fruit",
         rating : 4,
         others : "famous",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'grape'
       }
       ,
       {
         id:9,
         img:"productsImages/banana.png",
-        name:"Banana Fruit",
+        name:"Banana",
         price:180,
         catagory : "fruit",
         rating : 3,
         others : "popular",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'banana'
       }
       ,
       {
         id:10,
         img:"productsImages/appricot.png",
-        name:"Apricot Fruit",
+        name:"Apricot",
         price:190,
         catagory : "fruit",
         rating : 1,
         others : "famous",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'apricot'
       },
       {
         id:11,
         img:"productsImages/pianapple.png",
-        name:"piapple Fruit",
+        name:"piapple",
         price:70,
         catagory : "fruit",
         rating : 2,
         others : "famous",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'piapply'
       },
       {
         id:12,
@@ -126,7 +137,8 @@ const Data = {
         catagory : "fruit",
         rating : 3,
         others : "popular",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'pomegranate'
       },
       {
         id:13,
@@ -136,7 +148,8 @@ const Data = {
         catagory : "fruit",
         rating : 4,
         others : "popular",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'gooseberry'
       },
       {
         id:14,
@@ -146,7 +159,8 @@ const Data = {
         catagory : "fruit",
         rating : 5,
         others : "trending",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'jack'
       },
       {
         id:15,
@@ -156,17 +170,19 @@ const Data = {
         catagory : "fruit",
         rating : 5,
         others : "trending",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'acaiberry'
       },
       {
         id:16,
         img:"productsImages/Quince.png",
-        name:"Quince Fruit",
+        name:"Quince",
         price:103,
         catagory : "fruit",
         rating : 4,
         others : "popular",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'quince'
       },
       {
         id:17,
@@ -176,7 +192,8 @@ const Data = {
         catagory : "fruit",
         rating : 3,
         others : "trending",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'custardapple'
       },
       {
         id:18,
@@ -186,7 +203,8 @@ const Data = {
         catagory : "fruit",
         rating : 2,
         others : "trending",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'muskmelon'
       },
       {
         id:19,
@@ -196,7 +214,8 @@ const Data = {
         catagory : "vegitable",
         rating : 1,
         others : "trending",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'potato'
       },
       {
         id:20,
@@ -206,7 +225,8 @@ const Data = {
         catagory : "vegitable",
         rating : 2,
         others : "trending",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'cabbage'
       },
       {
         id:21,
@@ -216,7 +236,8 @@ const Data = {
         catagory : "vegitable",
         rating : 5,
         others : "famous",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'tomato'
       },
       {
         id:22,
@@ -226,7 +247,8 @@ const Data = {
         catagory : "vegitable",
         rating : 4,
         others : "trending",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'cauliflower'
       },
       {
         id:23,
@@ -236,7 +258,8 @@ const Data = {
         catagory : "vegitable",
         rating : 3,
         others : "popular",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'carrot'
       },
       {
         id:24,
@@ -246,7 +269,8 @@ const Data = {
         catagory : "vegitable",
         rating : 4,
         others : "famous",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'cucumber'
       },
       {
         id:25,
@@ -256,7 +280,8 @@ const Data = {
         catagory : "legume",
         rating : 5,
         others : "famous",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'mungbeans'
       },
       {
         id:26,
@@ -266,7 +291,8 @@ const Data = {
         catagory : "legume",
         rating : 3,
         others : "trending",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'navybeans'
       },
       {
         id:27,
@@ -276,7 +302,8 @@ const Data = {
         catagory : "legume",
         rating : 2,
         others : "popular",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'peanuts'
       },
       {
         id:28,
@@ -286,7 +313,8 @@ const Data = {
         catagory : "legume",
         rating : 4,
         others : "trending",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'pintobeans'
       },
       {
         id:29,
@@ -296,7 +324,8 @@ const Data = {
         catagory : "legume",
         rating : 5,
         others : "famous",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'split'
       },
       {
         id:30,
@@ -306,7 +335,8 @@ const Data = {
         catagory : "legume",
         rating : 4,
         others : "popular",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'dalbean'
       },
       {
         id:31,
@@ -316,7 +346,8 @@ const Data = {
         catagory : "legume",
         rating : 1,
         others : "trending",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'dalchickpea'
       },
       {
         id:32,
@@ -326,7 +357,8 @@ const Data = {
         catagory : "legume",
         rating : 5,
         others : "famous",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'cuisinebean'
       },
       {
         id:33,
@@ -336,7 +368,8 @@ const Data = {
         catagory : "legume",
         rating : 3,
         others : "popular",
-        numOfProducts : 1
+        numOfProducts : 1,
+        searchname : 'kidneybean'
       }
 ]
 }
