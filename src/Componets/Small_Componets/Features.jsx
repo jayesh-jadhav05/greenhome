@@ -1,8 +1,8 @@
 import React from "react";
-import DragonImg from '../../Images/dragon.jpg';
-import Guava from '../../Images/guava.jpg';
-import Bary from '../../Images/bary.jpg';
-import ginger from '../../Images/ginger.jpg';
+import DragonImg from '../Images/dragon.jpg';
+import Guava from '../Images/guava.jpg';
+import Bary from '../Images/bary.jpg';
+import ginger from '../Images/ginger.jpg';
 
 import Card from '../Small_Componets/Card';
 import '../../Styles/feactures.scss';

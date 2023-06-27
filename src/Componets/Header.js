@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {  useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import '../Styles/header.scss';
 import {ToastContainer,toast} from 'react-toastify';
@@ -19,19 +19,20 @@ const Header = () => {
         
     };
 
-    useEffect(() => {
         // if the user is login then cart and profile show else not..
+       useEffect(() => {
         if(localStorage.getItem("CurrentUser") !== null){
-        const data = JSON.parse(localStorage.getItem("CurrentUser"));
-        const newUser = {
-            username : data.firstname + data.lastname,
-            email : data.email
-        };
-        setUserDetails(newUser);
-    }else{
-        setStyle({maxHeight : "0"})
-    }
-    },[userDetails])
+            const data = JSON.parse(localStorage.getItem("CurrentUser"));
+            const newUser = {
+                username : data.firstname + data.lastname,
+                email : data.email
+            };
+            setUserDetails(newUser);
+         }else{
+            setStyle({maxHeight : "0"})
+        }
+       },[])
+    
     
     // this function for toggle a user profile card..
     const toggleMenu = ()  => {
@@ -56,7 +57,7 @@ const Header = () => {
     
 
     return (
-        <>
+        <React.Fragment>
         <header>
             <nav className="navbar">
                 <div className="left">
@@ -97,7 +98,7 @@ const Header = () => {
             </nav>
         </header>
         <ToastContainer />
-        </>
+        </React.Fragment>
     )
 }
 

@@ -1,11 +1,11 @@
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import user1 from '../../Images/user1.jpeg';
-import user2 from '../../Images/user2.jpeg';
-import user4 from '../../Images/user4.jpg';
-import user5 from '../../Images/user6.jpg';
-import user6 from '../../Images/user7.jpeg';
-import user7 from '../../Images/user8.jpeg';
+import user1 from '../Images/user1.jpeg';
+import user2 from '../Images/user2.jpeg';
+import user4 from '../Images/user4.jpg';
+import user5 from '../Images/user6.jpg';
+import user6 from '../Images/user7.jpeg';
+import user7 from '../Images/user8.jpeg'
 import '../../Styles/testimonial.scss';
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';

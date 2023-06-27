@@ -39,10 +39,12 @@ const Signup = () => {
     if (userExists) {
       toast.error('This User Name already Taken 👎', { position: "top-center",autoClose: 5000,hideProgressBar: false,closeOnClick: true,pauseOnHover: true,draggable: true,progress: undefined,theme: "light",});
     } else if (user.password !== user.comfirmPassword) {
-     
       // use Toast for passsword error..
       toast.error('Your Comfirm Password is Wrong', { position: "top-center",autoClose: 5000,hideProgressBar: false,closeOnClick: true,pauseOnHover: true,draggable: true,progress: undefined,theme: "light",});
-    } else {
+    } else if(user.password.length > 7){
+      toast.error('Your Password is Weak', { position: "top-center",autoClose: 5000,hideProgressBar: false,closeOnClick: true,pauseOnHover: true,draggable: true,progress: undefined,theme: "light",});
+    }
+    else {
       // Add the new user to the users array
       users.push(user);
 

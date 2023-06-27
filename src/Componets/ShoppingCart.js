@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import '../Styles/shoppingCart.scss';
 import { NavLink } from 'react-router-dom';
 import {ToastContainer,toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import SingleProductCart from './Small_Componets/SingleProductCart';
+import MyContext from './Context/MyContext';
 
 const ShoppingCart = () => {
  
@@ -30,6 +31,9 @@ const ShoppingCart = () => {
         toast('Product Remove Successfully 👍',{position : 'top-center',autoClose: 2000})
     };
 
+    const a  = useContext(MyContext);
+    a.setTotalPrice(totalPrice);
+    // setTotalPrice(totalPrice);
     // [ When User Click on plus,minus button The price will Change or Product Quantity also ]
     const Change_Product_Quantity = (product_id,whatChange) => {
        const collection = JSON.parse(localStorage.getItem("CurrentUser"));
@@ -54,8 +58,12 @@ const ShoppingCart = () => {
        setData(JSON.parse(localStorage.getItem("CurrentUser")).Mycart);
     }
 
-    
+    // ---------------------------------Stripe gateway integration-------------------------
+
   
+
+
+// -----------------------------End Point---------------------------------------
     return (
         <React.Fragment>
         <div className='cartContainer'>
@@ -90,7 +98,7 @@ const ShoppingCart = () => {
                             <h3>Total Cost</h3>
                             <h6>{totalPrice}Rs</h6>
                             <h5>Have a Promo Code?</h5>
-                            <button>Pay Now</button>
+                            <NavLink to='/payment'><button>Pay Now</button></NavLink>
                         </div>
                     </div>
                     <div className='atmImg'>

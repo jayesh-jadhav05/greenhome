@@ -39,7 +39,7 @@ const SeasonalHarvestCalender = () => {
     <h2 className='heading'>Seasonal Harvest Calender</h2>
     <div className='grid_container'>
     {
-    harvestData.map((item) => <MonthHarvest item={item} />)
+    harvestData.map((item,index) => <MonthHarvest key={index+1} item={item} />)
     } 
     </div>
     </div>
